@@ -1,15 +1,16 @@
 package ca.ualberta.cs.lonelytwitter;
 
-import java.util.Date;
-import java.util.List;
-
 import android.app.Activity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.Date;
+import java.util.List;
+
+import ca.ualberta.cs.lonelytweet.NormalLonelyTweet;
 
 public class LonelyTwitterActivity extends Activity {
 
@@ -39,8 +40,8 @@ public class LonelyTwitterActivity extends Activity {
 				tweets);
 		oldTweetsList.setAdapter(adapter);
 	}
-
-	public void save(View v) {
+	// Remove unused input parameter
+	public void save() {
 		String text = bodyText.getText().toString();
 
 		NormalLonelyTweet tweet;
@@ -59,8 +60,8 @@ public class LonelyTwitterActivity extends Activity {
 			Toast.makeText(this, "Invalid tweet", Toast.LENGTH_SHORT).show();
 		}
 	}
-
-	public void clear(View v) {
+	// Remove unused input parameter
+	public void clear() {
 		tweets.clear();
 		adapter.notifyDataSetChanged();
 		tweetsProvider.saveTweets(tweets);

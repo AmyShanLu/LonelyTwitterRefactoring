@@ -5,7 +5,11 @@
     <string name="app_name">LonelyTwitter</string>
     <string name="save">Save</string>
     <string name="clear">Clear</string>
-    <string name="invalid_tweet">Invalid tweet</string>
-    <string name="important_identifier">*</string>
+    <!--Comment unused string resources-->
+    <!--<string name="invalid_tweet">Invalid tweet</string>-->
+    <!--<string name="important_identifier">*</string>-->
+
+    <string name="oldTweet">My old tweets</string>
+    <string name="hint">Hint</string>
     
 </resources>
